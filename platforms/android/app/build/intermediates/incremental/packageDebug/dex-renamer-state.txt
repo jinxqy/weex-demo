@@ -1,4 +1,4 @@
-#Tue May 01 20:40:25 CST 2018
-base.0=D\:\\demo\\weex\\weex0424\\evb0424\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Wed May 02 16:58:46 CST 2018
+base.0=D\:\\Workspace\\WXSample\\weex-demo\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.0=D\:\\demo\\weex\\weex0424\\evb0424\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=D\:\\Workspace\\WXSample\\weex-demo\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

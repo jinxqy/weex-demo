@@ -221,6 +221,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.taobao.weex.IWXRenderListener;
+import com.taobao.weex.WXGlobalEventModule;
 import com.taobao.weex.WXSDKEngine;
 import com.taobao.weex.WXSDKInstance;
 import com.taobao.weex.common.IWXDebugProxy;
@@ -241,6 +242,7 @@ public abstract class AbsWeexActivity extends AppCompatActivity implements IWXRe
   private String mUrl;// "http://your_current_IP:12580/examples/build/index.js";
   private String mPageName = TAG;
   protected Boolean isLocalUrl = false;
+  protected WXGlobalEventModule mGlobalEventModule;
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -270,6 +272,8 @@ public abstract class AbsWeexActivity extends AppCompatActivity implements IWXRe
     destoryWeexInstance();
     mInstance = new WXSDKInstance(this);
     mInstance.registerRenderListener(this);
+    mGlobalEventModule = new WXGlobalEventModule();
+    mGlobalEventModule.mWXSDKInstance = mInstance;
   }
 
   protected void renderPageByURL(String url) {

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\Workspace\\WXSample\\weex-demo\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "D:\\Workspace\\WXSample\\weex-demo\\platforms\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "D:\\demo\\weex\\weex0424\\evb0424\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "D:\\demo\\weex\\weex0424\\evb0424\\platforms\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }
