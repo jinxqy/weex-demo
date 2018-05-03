@@ -4548,7 +4548,7 @@ exports.default = {
     return {
       msg: ""
     };
-  },/*
+  },
   ready: function ready() {
     var self = this;
 
@@ -4556,12 +4556,9 @@ exports.default = {
       this.msg = "finish";
       event.showToast('finish');
     });
-  },*/
+  },
   methods: {
     scan: function scan() {
-		globalEvent.addEventListener("cam_finish", function (e) {
-      event.showToast(JSON.stringify(e));
-    });
       try {
         this.msg = "ready";
         event.openCamera();

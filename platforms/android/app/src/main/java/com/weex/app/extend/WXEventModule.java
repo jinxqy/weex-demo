@@ -4,8 +4,12 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.v4.content.FileProvider;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.weex.app.WXPageActivity;
@@ -43,9 +47,15 @@ public class WXEventModule extends WXModule {
     @JSMethod
     public void openCamera() {
         Intent takeIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        Uri photoUri = Uri.fromFile(new File(PATH));
-        takeIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
+        String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/weex_test.jpg";
+        Log.d("--sy", path);
         Context context = mWXSDKInstance.getContext();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            takeIntent.putExtra(MediaStore.EXTRA_OUTPUT, FileProvider.getUriForFile(context,
+                    "com.weex.app.fileprovider", new File(path)));
+        } else {
+            takeIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(path)));
+        }
         if (context instanceof Activity) {
             ((Activity) context).startActivityForResult(takeIntent, CAMERA_REQUEST_CODE);
         }
