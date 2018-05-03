@@ -6,5 +6,9 @@
     {
         "merged": "D:\\Workspace\\WXSample\\weex-demo\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\app_config.xml",
         "source": "D:\\Workspace\\WXSample\\weex-demo\\platforms\\android\\app\\src\\main\\res\\xml\\app_config.xml"
+    },
+    {
+        "merged": "D:\\Workspace\\WXSample\\weex-demo\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml\\file_paths.xml",
+        "source": "D:\\Workspace\\WXSample\\weex-demo\\platforms\\android\\app\\src\\main\\res\\xml\\file_paths.xml"
     }
 ]

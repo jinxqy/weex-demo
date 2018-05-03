@@ -2043,3 +2043,4 @@ int styleable zxing_finder_zxing_viewfinder_mask 3
 int[] styleable zxing_view { 0x7f010167 }
 int styleable zxing_view_zxing_scanner_layout 0
 int xml app_config 0x7f070000
+int xml file_paths 0x7f070001
